@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA visualizer</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+    
+<body>
+    <h1>DSA Visualizer</h1>
+    
+    <div class="slider-container">
+    <label for="sizeSlider">Array Size:</label>
+
+    <input
+    type="range"
+    id="sizeSlider"
+    min="5"
+    max="50"
+    value="10" />
+
+    <span id="sizeValue">10</span>
+    
+</div>
+
+    <div class="slider-container">
+
+    <label for="speedSlider">Speed:</label>
+
+    <input type="range" id="speedSlider" min="10" max="5000">
+
+    <span id="speedValue">200 ms</span>
+
+</div>
+
+    <div class="controls">
+
+    <button id="generateBtn">Generate Array</button>
+   
+
+<select id="algorithmSelect">
+     <option value="" selected disabled>
+        Sorting Algorithms
+    </option>
+    <option value="bubble">Bubble Sort</option>
+    <option value="selection">Selection Sort</option>
+    <option value="insertion">Insertion Sort</option>
+    <option value="merge">Merge Sort</option>
+    <option value="quick">Quick Sort</option>
+</select>
+
+   <button id="sortBtn">Start Sorting</button>
+    </div>
+
+<div id="algo-info">
+    <h2>Algorithm Information</h2>
+
+<p><strong>Algorithm:</strong> <span id="algoName"></span></p>
+
+<p><strong>Best Case:</strong> <span id="bestCase"></span></p>
+
+<p><strong>Average Case:</strong> <span id="averageCase"></span></p>
+
+<p><strong>Worst Case:</strong> <span id="worstCase"></span></p>
+
+<p><strong>Space Complexity:</strong> <span id="spaceComplexity"></span></p>
+</div>
+
+    <div id="array-container">
+
+    </div>
+
+
+
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>
